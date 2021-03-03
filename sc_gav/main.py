@@ -26,12 +26,14 @@ from scutils import Singleton
 from scutils import log_init
 
 from sc_gav.utils import config
+from .gav_searcher import GavSearcher
+from sc_hash.hash_utils import HashUtils
 
 
 class Runner(metaclass=Singleton):
 
     def __init__(self):
-        pass
+        self._gav_searcher = GavSearcher()
 
     def run(self):
         dev_mode = False
@@ -40,6 +42,14 @@ class Runner(metaclass=Singleton):
         except AttributeError:
             pass
         logging.getLogger(__name__).info('program is running in development mode: {}'.format(dev_mode))
+        libs = set()
+        lib_paths = config.get("scan_libs")
+        if lib_paths is not None:
+            for lib_path in lib_paths:
+                libs.add(lib_path)
+        if len(libs) > 0:
+            HashUtils.generate_hash(libs)
+        self._gav_searcher.search_dependency_gav()
         return 0
 
 

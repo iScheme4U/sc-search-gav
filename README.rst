@@ -31,12 +31,22 @@ The default configuration file looks like this::
       # whether this program is running is development mode
       dev_mode: False
 
+    search:
+      # search url
+      url: "https://search.maven.org"
+      # retry times
+      retries: 3
+
+    # directories to be scanned for jars
+    scan_libs:
+      - /tmp/libs
 
 Dependencies
 ------------
 
 * `sc-utilities <https://github.com/Scott-Lau/sc-utilities>`_ >= 0.0.2
 * `sc-config <https://github.com/Scott-Lau/sc-config>`_ >= 0.0.3
+* `sc-generate-hash <https://github.com/Scott-Lau/sc-generate-hash>`_ >= 0.0.1
 
 Changes
 -------

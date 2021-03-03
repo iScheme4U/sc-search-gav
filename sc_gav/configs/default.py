@@ -25,4 +25,11 @@ DEFAULT_CONFIG = {
     "dev": {
         "dev_mode": False,
     },
+    "search": {
+        "url": "https://search.maven.org",
+        "retries": 3,
+    },
+    # directories to be scanned for jars
+    "scan_libs": [
+    ],
 }

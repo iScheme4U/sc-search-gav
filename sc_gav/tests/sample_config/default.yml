@@ -1,3 +1,13 @@
 dev:
   # whether this program is running is development mode
   dev_mode: False
+
+search:
+  # search url
+  url: "https://search.maven.org"
+  # retry times
+  retries: 3
+
+# directories to be scanned for jars
+scan_libs:
+  - /tmp/libs

@@ -78,6 +78,7 @@ setup(
     install_requires=[
         'sc-utilities>=0.0.2',
         'sc-config>=0.0.3',
+        'sc-generate-hash>=0.0.2',
     ],
     package_data={
         'sc_gav': ['tests/sample_config/default.yml'],
