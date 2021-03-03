@@ -53,7 +53,7 @@ setup(
     author_email='exceedego@126.com',
     license='MIT',
     platforms='POSIX',
-    description='A utilities for searching GAV(groupId artifactId and version) using hash values',
+    description='A utility for searching GAV(groupId artifactId and version) using hash values',
     long_description=readme,
     keywords=(
         'python GAV maven search groupId artifactId'

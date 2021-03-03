@@ -3,10 +3,10 @@
 .. image:: https://img.shields.io/pypi/pyversions/sc-search-gav
     :alt: PyPI - Python Version
 
-A simple Python project sample structure
-========================================
+A simple utility for searching GAV
+==================================
 
-This project provides a sample structure for creating python project.
+This project provides a utility for searching GAV(groupId artifactId and version) using hash values.
 
 
 Installation
