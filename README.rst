@@ -46,13 +46,7 @@ Dependencies
 
 * `sc-utilities <https://github.com/Scott-Lau/sc-utilities>`_ >= 0.0.2
 * `sc-config <https://github.com/Scott-Lau/sc-config>`_ >= 0.0.3
-* `sc-generate-hash <https://github.com/Scott-Lau/sc-generate-hash>`_ >= 0.0.1
-
-Changes
--------
-
-Version 0.0.1
-    * Initial version
+* `sc-generate-hash <https://github.com/Scott-Lau/sc-generate-hash>`_ >= 0.0.3
 
 License
 -------

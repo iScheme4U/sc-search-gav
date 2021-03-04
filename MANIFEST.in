@@ -1,0 +1,3 @@
+include requirements.txt
+include CHANGES.rst
+recursive-include sc_gav/tests/sample_config *
